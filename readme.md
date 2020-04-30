@@ -29,7 +29,7 @@ Feature Set
 
 Age, size, and weight are currently redacted. We will publish this data when there are enough patients, that meaningfull intervals can be chosen according to the concept of k-anonymity and l-diversity. 
 
-All lab values (12 - 17) are given in intervals to protect patient identity. A value below the detection limit is denoted by -2, above the detection limit by -1.
+All lab values (12 - 17) are given in intervals to protect patient identity. A value below the detection limit is denoted by `-inf`, above the detection limit by `inf`.
 
 
 License

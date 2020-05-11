@@ -9,14 +9,14 @@ Feature Set
 | id |          label          |   unit | comment / reference interval (precision)   |
 | -- | ----------------------- | -----: | ------------------------------------------ |
 | 1  | patient_id              |        | randomly generated patient id              |
-| 2  | sex                     |   m/w  |                                            |
-| 3  | age                     | years  | currently redacted (see below)             |
-| 4  | size                    |    cm  | currently redacted (see below)             |
-| 5  | weight                  |    kg  | currently redacted (see below)             |
-| 6  | admission offset        |  days  | days since admission (begin of symptoms)   |
-| 7  | icu admission offset    |  days  |                                            |
-| 8  | survival                |  days  | days until death or null                   |
-| 9  | image_id                |        | randomly generated image id                |
+| 2  | image_id                |        | randomly generated image id (filename)     |
+| 3  | sex                     |   m/w  |                                            |
+| 4  | age                     | years  | currently redacted (see below)             |
+| 5  | size                    |    cm  | currently redacted (see below)             |
+| 6  | weight                  |    kg  | currently redacted (see below)             |
+| 7  | admission offset        |  days  | days since admission (begin of symptoms)   |
+| 8  | icu admission offset    |  days  |                                            |
+| 9  | death_offset            |  days  | days until death or null                   |
 | 10 | modality                |        | currently all images are chest radiographs |
 | 11 | projection              |        | ap, pa ...                                 |
 | 12 | lactate dehydrogenase   |   U/l  | < 248 (5)                                  |
@@ -25,13 +25,28 @@ Feature Set
 | 15 | coagulation factor XIII |     %  | 70 - 140 (5)                               |
 | 16 | neutrophils             | Tsd/µl | 1.5 - 7.7 (0.1)                            |
 | 17 | lymphocytes             | Tsd/µl | 1.1 - 4.0 (0.1)                            |
-| 18 | corona test type        |        |                                            |
+| 18 | pO2                     |   mmHg | (5)                                        |
+| 19 | pCO2                    |   mmHg | (5)                                        |
+| 20 | corona test type        |        |                                            |
 
 Age, size, and weight are currently redacted. We will publish this data when there are enough patients, that meaningfull intervals can be chosen according to the concept of k-anonymity and l-diversity. 
 
-All lab values (12 - 17) are given in intervals to protect patient identity. A value below the detection limit is denoted by `-inf`, above the detection limit by `inf`.
+All lab values (12 - 19) are given in intervals to protect patient identity. A value below the detection limit is denoted by `-inf`, above the detection limit by `inf`.
 
 
-License
--------
+Observations (FAQ)
+------------------
+  - admission offset > icu admission offset  
+    Some of the cases suggest that the admission to the clinic was after admission to the ICU. This is an artifact due to using the specific (COVID) case data for determining the admission date (and therefore offset). The patient may have already been at the ICU before being diagnosed with COVID.
+
+
+License and Attribution
+-----------------------
 Master-, image- and laboratory-data of this repository are licensed under the Creative Commons Attribution 3.0 Unported.
+
+If you use this data, you must attribute the authors in any publication (DOI: [10.6084/m9.figshare.12275009][DOI]). You may include the specific [release] or [commit hash][commits] for reproducibility.
+
+
+[DOI]:     https://doi.org/10.6084/m9.figshare.12275009
+[release]: https://github.com/ml-workgroup/covid-19-image-repository/releases
+[commits]: https://github.com/ml-workgroup/covid-19-image-repository/commits/

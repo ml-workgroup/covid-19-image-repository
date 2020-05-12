@@ -2,6 +2,15 @@ COVID-19 Image Repository
 =========================
 The aim of this project is to make an anonymized data set of COVID-19 positive patients with a focus on radiological imaging publicly available. This data set includes master-, image- and laboratory-data.
 
+The repository contains image data from the [Institute for Diagnostic and Interventional Radiology][radiology mhh], Hannover Medical School, Hannover, Germany.
+
+
+Download
+--------
+The Dicom files have been converted to Nifti. We are currently working on making the Nifti files publicly available. Unfortunately, the files are too large to host them on Github. For the moment, please send us an EMail (see Contact Information), we will figure out a way to get the images to you.
+
+We included downscaled versions of the Nifti images in the png folder.
+
 
 Feature Set
 -----------
@@ -42,11 +51,19 @@ Observations (FAQ)
 
 License and Attribution
 -----------------------
-Master-, image- and laboratory-data of this repository are licensed under the Creative Commons Attribution 3.0 Unported.
+Master-, image- and laboratory-data of this repository are licensed under the Creative Commons Attribution 3.0 Unported ([CC BY 3.0]).
 
 If you use this data, you must attribute the authors in any publication (DOI: [10.6084/m9.figshare.12275009][DOI]). You may include the specific [release] or [commit hash][commits] for reproducibility.
 
 
-[DOI]:     https://doi.org/10.6084/m9.figshare.12275009
-[release]: https://github.com/ml-workgroup/covid-19-image-repository/releases
-[commits]: https://github.com/ml-workgroup/covid-19-image-repository/commits/
+Contact Information
+-------------------
+Please use the ticketing system where applicable. Otherwise, please use the following EMail address: winther.hinrich@mh-hannover.de
+
+
+
+[radiology mhh]: https://www.mhh.de/institute-zentren-forschungseinrichtungen/institut-fuer-diagnostische-und-interventionelle-radiologie
+[CC BY 3.0]: https://creativecommons.org/licenses/by/3.0/
+[DOI]:       https://doi.org/10.6084/m9.figshare.12275009
+[release]:   https://github.com/ml-workgroup/covid-19-image-repository/releases
+[commits]:   https://github.com/ml-workgroup/covid-19-image-repository/commits/

@@ -2,14 +2,14 @@ COVID-19 Image Repository
 =========================
 The aim of this project is to make an anonymized data set of COVID-19 positive patients with a focus on radiological imaging publicly available. This data set includes master-, image- and laboratory-data.
 
-The repository contains image data from the [Institute for Diagnostic and Interventional Radiology][radiology mhh], Hannover Medical School, Hannover, Germany.
+This repository contains image data from the [Institute for Diagnostic and Interventional Radiology][radiology mhh], Hannover Medical School, Hannover, Germany.
 
 
 Download
 --------
 The Dicom files have been converted to Nifti. We are currently working on making the Nifti files publicly available. Unfortunately, the files are too large to host them on Github. For the moment, please send us an EMail (see Contact Information), we will figure out a way to get the images to you.
 
-We included downscaled versions of the Nifti images in the png folder.
+Additionally, we included downscaled versions of the Nifti images in the png folder.
 
 
 Feature Set

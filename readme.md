@@ -1,8 +1,8 @@
 COVID-19 Image Repository
 =========================
-The aim of this project is to make an anonymized data set of COVID-19 positive patients with a focus on radiological imaging publicly available. This data set includes master-, image- and laboratory-data.
+This project aims to create an anonymized data set of COVID-19 cases with a focus on radiological imaging. This includes images with extensive metadata, such as admission-, ICU-, laboratory-, and patient master-data.
 
-This repository contains image data from the [Institute for Diagnostic and Interventional Radiology][radiology mhh], Hannover Medical School, Hannover, Germany.
+This repository contains image data from the [Institute for Diagnostic and Interventional Radiology][radiology mhh], [Hannover Medical School][mhh], Hannover, Germany.
 
 
 Download
@@ -63,6 +63,7 @@ Please use the ticketing system where applicable. Otherwise, please use the foll
 
 
 [radiology mhh]: https://www.mhh.de/institute-zentren-forschungseinrichtungen/institut-fuer-diagnostische-und-interventionelle-radiologie
+[mhh]:       https://www.mhh.de/
 [CC BY 3.0]: https://creativecommons.org/licenses/by/3.0/
 [DOI]:       https://doi.org/10.6084/m9.figshare.12275009
 [release]:   https://github.com/ml-workgroup/covid-19-image-repository/releases

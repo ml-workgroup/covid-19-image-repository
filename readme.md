@@ -25,7 +25,7 @@ Feature Set
 | 6  | weight                  |    kg  | currently redacted (see below)             |
 | 7  | admission offset        |  days  | days since admission (begin of symptoms)   |
 | 8  | icu admission offset    |  days  |                                            |
-| 9  | death_offset            |  days  | days until death or null                   |
+| 9  | death offset            |  days  | days until death or null                   |
 | 10 | modality                |        | currently all images are chest radiographs |
 | 11 | projection              |        | ap, pa ...                                 |
 | 12 | lactate dehydrogenase   |   U/l  | < 248 (5)                                  |
@@ -40,13 +40,15 @@ Feature Set
 
 Age, size, and weight are currently redacted. We will publish this data when there are enough patients, that meaningfull intervals can be chosen according to the concept of k-anonymity and l-diversity. 
 
+Offsets, i.e. `admission offset` and `icu admission offset`, are given as relative times in regard to the exam. Please consult the feature set table for units. I.e. an `admission offset` == -4 and `icu admission offset` == 6 would encode, that the patient was admitted to the hospital four days ago and was transferred to the ICU six days after the image was taken. Especially the `admission offset` can be noisy; please see FAQ #1.
+
 All lab values (12 - 19) are given in intervals to protect patient identity. A value below the detection limit is denoted by `-inf`, above the detection limit by `inf`.
 
 
 Observations (FAQ)
 ------------------
-  - admission offset > icu admission offset  
-    Some of the cases suggest that the admission to the clinic was after admission to the ICU. This is an artifact due to using the specific (COVID) case data for determining the admission date (and therefore offset). The patient may have already been at the ICU before being diagnosed with COVID.
+  1. admission offset > icu admission offset  
+     Some of the cases suggest that the admission to the clinic was after admission to the ICU. This is an artifact due to using the specific (COVID) case data for determining the admission date (and therefore offset). The patient may have already been at the ICU before being diagnosed with COVID.
 
 
 License and Attribution

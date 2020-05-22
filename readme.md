@@ -38,7 +38,7 @@ Feature Set
 | 19 | pCO2                    |   mmHg | (5)                                        |
 | 20 | corona test type        |        |                                            |
 
-Age, size, and weight are currently redacted. We will publish this data when there are enough patients, that meaningfull intervals can be chosen according to the concept of k-anonymity and l-diversity. 
+Age, size, and weight are currently redacted. We will publish this data when there are enough patients, that meaningful intervals can be chosen according to the concept of k-anonymity and l-diversity. 
 
 Offsets, i.e. `admission offset` and `icu admission offset`, are given as relative times in regard to the exam. Please consult the feature set table for units. I.e. an `admission offset` == -4 and `icu admission offset` == 6 would encode, that the patient was admitted to the hospital four days ago and was transferred to the ICU six days after the image was taken. Especially the `admission offset` can be noisy; please see FAQ #1.
 

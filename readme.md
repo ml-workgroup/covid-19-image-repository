@@ -45,6 +45,17 @@ Offsets, i.e. `admission offset` and `icu admission offset`, are given as relati
 All lab values (12 - 19) are given in intervals to protect patient identity. A value below the detection limit is denoted by `-inf`, above the detection limit by `inf`.
 
 
+Nifti Files
+-----------
+We provide the raw, unprocessed, gray value image data as [Nifti] files. This is done to protect patient identity, as Dicom files are hard to anonymize. However, the files are too large to host on Github.
+
+Space and bandwith are kindly provided by the Open Telekom Cloud (Deutschen Telekom AG).
+
+### Download Links:
+  - [Version 2.0]
+  - [Version 1.0]
+
+
 Observations (FAQ)
 ------------------
   1. admission offset > icu admission offset  
@@ -66,7 +77,11 @@ Please use the ticketing system where applicable. Otherwise, please use the foll
 
 [radiology mhh]: https://www.mhh.de/institute-zentren-forschungseinrichtungen/institut-fuer-diagnostische-und-interventionelle-radiologie
 [mhh]:       https://www.mhh.de/
+[Nifti]:     https://nifti.nimh.nih.gov/
 [CC BY 3.0]: https://creativecommons.org/licenses/by/3.0/
 [DOI]:       https://doi.org/10.6084/m9.figshare.12275009
 [release]:   https://github.com/ml-workgroup/covid-19-image-repository/releases
 [commits]:   https://github.com/ml-workgroup/covid-19-image-repository/commits/
+
+[Version 1.0]: https://covid-19-image-repository.obs.otc.t-systems.com/v1_cov19_nii.tar
+[Version 2.0]: https://covid-19-image-repository.obs.otc.t-systems.com/v2_cov19_nii.tar

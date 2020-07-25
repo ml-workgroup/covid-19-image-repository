@@ -5,13 +5,6 @@ This project aims to create an anonymized data set of COVID-19 cases with a focu
 This repository contains image data from the [Institute for Diagnostic and Interventional Radiology][radiology mhh], [Hannover Medical School][mhh], Hannover, Germany.
 
 
-Download
---------
-The Dicom files have been converted to Nifti. We are currently working on making the Nifti files publicly available. Unfortunately, the files are too large to host them on Github. For the moment, please send us an EMail (see Contact Information), we will figure out a way to get the images to you.
-
-Additionally, we included downscaled versions of the Nifti images in the png folder.
-
-
 Feature Set
 -----------
 
@@ -45,9 +38,11 @@ Offsets, i.e. `admission offset` and `icu admission offset`, are given as relati
 All lab values (12 - 19) are given in intervals to protect patient identity. A value below the detection limit is denoted by `-inf`, above the detection limit by `inf`.
 
 
-Nifti Files
------------
-We provide the raw, unprocessed, gray value image data as [Nifti] files. This is done to protect patient identity, as Dicom files are hard to anonymize. However, the files are too large to host on Github.
+Download
+--------
+We provide the raw, unprocessed, gray value image data as [Nifti] files. This is done to protect patient identity, as Dicom files are hard to anonymize. However, the files are too large to host on Github. 
+
+Additionally, we included downscaled versions of the Nifti images in the png folder.
 
 Space and bandwith are kindly provided by the Open Telekom Cloud (Deutschen Telekom AG).
 

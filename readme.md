@@ -48,13 +48,19 @@ Space and bandwith are kindly provided by the Open Telekom Cloud (Deutschen Tele
 
 ### Download Links:
   - [Version 2.0]
-  - [Version 1.0]
+  - [Version 1.0]  
+    Do not use this version (see erratum 1). The data is provided for reproducibility reasons.
 
 
 Observations (FAQ)
 ------------------
   1. admission offset > icu admission offset  
      Some of the cases suggest that the admission to the clinic was after admission to the ICU. This is an artifact due to using the specific (COVID) case data for determining the admission date (and therefore offset). The patient may have already been at the ICU before being diagnosed with COVID.
+
+
+Errata
+------
+  1. In Version 1.0 there is an issue with the date calculation (issue #6). This might lead to incorrect date offset calculations. We strongly advise to upgrade to a newer version.
 
 
 License and Attribution

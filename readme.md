@@ -46,9 +46,11 @@ Additionally, we included downscaled versions of the Nifti images in the png fol
 
 Space and bandwith are kindly provided by the Open Telekom Cloud (Deutschen Telekom AG).
 
-### Download Links:
-  - [Version 2.0]
-  - [Version 1.0]  
+### Download Links: https://doi.org/10.25835/0090041
+  - [Version 2.0](https://data.uni-hannover.de/dataset/cov-19-img/resource/38e72a9b-30a9-422a-a481-c7491e655437)
+  - [Version 1.0](https://data.uni-hannover.de/dataset/cov-19-img/resource/562a5f31-efd0-4c76-bec4-250e52985d3a)
+
+
     Do not use this version (see erratum 1). The data is provided for reproducibility reasons.
 
 
